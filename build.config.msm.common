@@ -6,6 +6,8 @@ elif [ "${DEVICE}" == "9P" ]; then
 	DTB_DIR=vendor/oplus/lemonadev
 elif [ "${DEVICE}" == "LUNAA" ]; then
 	DTB_DIR=vendor/oplus/lunaa
+elif [ "${DEVICE}" == "porsche" ]; then
+        DTB_DIR=vendor/oplus/porsche
 fi
 
 function clean_dtbs() {

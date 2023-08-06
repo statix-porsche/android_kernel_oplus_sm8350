@@ -64,6 +64,13 @@ if [ ${DEVICE} == "LUNAA" ]; then
 	export DEVICE=LUNAA
 fi
 
+# Enable VOOC for realme GT 2 (porsche).
+if [ ${DEVICE} == "porsche" ]; then
+        export OPLUS_VND_ENV_CHG_OP9RT_PMIC_VOOCPHY=yes
+    # export the $DEVICE variable.
+        export DEVICE=porsche
+fi
+
 ################################################################################
 ## Inherit perf configs
 if [ ${GCOV_PROFILE} != 1 ]; then

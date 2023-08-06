@@ -167,6 +167,8 @@ ifeq ($(DEVICE), 9RT)
 $(info Building kernel for OnePlus 9RT, enabling VOOC)
 else ifeq ($(DEVICE), LUNAA)
 $(info Building kernel for Realme GT Master Edition, enabling VOOC)
+else ifeq ($(DEVICE), porsche)
+$(info Building kernel for Realme GT 2, enabling VOOC)
 else
 $(info Building kernel for OnePlus 9 Pro)
 endif
